@@ -13,6 +13,29 @@ public class Pizza {
     boolean isBillCreated;
     boolean isTakeAway;
 
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setBill(String bill) {
+        this.bill = bill;
+    }
+
+    public Boolean getVeg() {
+        return isVeg;
+    }
+
+    public void setVeg(Boolean veg) {
+        isVeg = veg;
+    }
+
+    public int getToppings() {
+        return toppings;
+    }
+
+    public void setToppings(int toppings) {
+        this.toppings = toppings;
+    }
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -80,6 +103,6 @@ public class Pizza {
             this.isBillCreated =true;
             return this.bill;
         }
-        return "";
+       return "";
     }
 }
